@@ -5,6 +5,7 @@
 }
 body{
     font-size: 18px;
+    background-color: #fffbf8;
 }
 .header img{
     width: 100%;
@@ -184,7 +185,7 @@ body{
     margin-top: 10px; /**/
 }
 .containerTestimoni .divClientTestimoni .divItemClient img{
-    width: 50px;
+    width: 65px;
     border-radius: 50%;
 }
 .containerTestimoni .divClientTestimoni .divItemClient .nombreClient{
@@ -284,14 +285,17 @@ body{
         margin-top: 30px;
     }
     .containerTestimoni{
-        padding: 70px;
+        padding: 100px;
     }
     .containerTestimoni .divClientTestimoni{
         grid-template-columns: repeat(3,1fr);
-        margin-top: 50px;
+        margin-top: 60px;
     }
     .containerImageGallery{
         grid-template-columns: repeat(4,1fr);
+    }
+    .containerTestimoni .divClientTestimoni .divItemClient div{
+        margin-top: 50px;
     }
     .containerFooter{
         background-color: #4abba4;
