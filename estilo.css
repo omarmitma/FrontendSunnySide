@@ -158,6 +158,13 @@ body{
 .gridDiv .gridItemText .learnMore2 a{
     border-bottom: 8px double #fe7867;
 }
+.gridDiv .gridItemText .learnMore a:hover{
+    color: #aaa;
+    border-bottom: 8px double #dac343;
+}
+.gridDiv .gridItemText .learnMore2 a:hover{
+    border-bottom: 8px double #e05f4e;
+}
 .gridDiv .gridItemTextImg .ItemText{
     padding: 0 10px 5px 10px;
     height: 18%;
