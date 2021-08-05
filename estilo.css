@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+}
+.header img{
+    width: 100%;
+    height: 100%;
+}
+.browser{
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.browser .divNavlinkMobile{
+    grid-column: 1/3;
+}
+.browser .divButton{
+    text-align: right;
+}
+.browser .divButton button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.browser .divNavlinkMobile .navMobile{
+    display: none;
+    position: absolute;
+    width: 90%;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 40px;
+    border-radius: 5px;
+}
+.browser .divNavlinkMobile .navMobile::after{
+    background: linear-gradient(315deg, #FFF 50%, #00000000 50%);
+    content: "";
+    height: 2rem;
+    position: absolute;
+    right: 0;
+    top: -1.625rem;
+    width: 1.625rem;
+}
+
+.browser .divNavlinkMobile .navMobile a{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    text-decoration: none;
+    color: #888;
+    font-weight: bold;
+}
+.browser .divNavlinkMobile .navMobile .contactMobile{
+    padding: 20px 10px;
+    background-color: #fad400;
+    color: #000;
+    border-radius: 50px;
+    margin: 40px 30px;
+    text-align: center;
+}
+.browser .divNavlink{
+    text-align: right;
+    display: none;
+}
+
+.browser .divNavlink a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+.browser .divNavlink .contact{
+    background-color: #fff;
+    color: #000;
+    padding: 15px 35px;
+    border-radius: 45px;
+    font-weight: 700;
+}
+.browser .divNavlink .contact:hover{
+    background-color: rgba(255, 255, 255, .3);
+    color: #fff;
+}
+.header{
+    text-align: center;
+    width: 100%;
+}
+.header .imgDesktop{
+    display: none;
+}
+.header .imgMobile{
+    display: block;
+}
+.browser .divText{
+    grid-column: 1/3;
+    text-align: center;
+    padding-top: 40px;
+    color: #fff;
+}
+.browser .divText h1{
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+.browser .divText a img{
+    margin-top: 30px;
+}
+.gridDiv{
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+.gridDiv .gridItem h2{
+    font-size: 25px;
+}
+.gridDiv .gridItem p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.gridDiv .gridItem img{
+    width: 100%;
+    height: 100%;
+}
+.gridDiv .gridItemTextImg{
+    display: flex;
+    justify-content:flex-end;
+    align-content: flex-end;
+    flex-direction: column;
+}
+.gridDiv .gridItemTextImg .ItemText{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    padding: 0 10px 5px 10px;
+}
+.gridDiv .gridItemTextImg .ItemImg{
+    position: relative;
+    height: 100%;
+}
+
+.gridDiv .gridItemText{
+    text-align: center;
+    padding: 20px;
+}
+.gridDiv .gridItemText .learnMore{
+    margin-top: 20px;
+}
+.gridDiv .gridItemText .learnMore a{
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 8px double #fad400;
+    color: #111;
+}
+.gridDiv .gridItemText .learnMore2 a{
+    border-bottom: 8px double #fe7867;
+}
+.gridDiv .gridItemTextImg .ItemText{
+    padding: 0 10px 5px 10px;
+    height: 18%;
+}
+.containerTestimoni{
+    text-align: center;
+    padding: 10px;
+}
+.containerTestimoni .divClientTestimoni{
+    display: grid;
+    text-align: center;
+}
+.containerTestimoni .divClientTestimoni .divItemClient{
+    padding: 20px 10px;
+}
+.containerTestimoni .divClientTestimoni .divItemClient div{
+    margin-top: 10px; /**/
+}
+.containerTestimoni .divClientTestimoni .divItemClient img{
+    width: 50px;
+    border-radius: 50%;
+}
+.containerTestimoni .divClientTestimoni .divItemClient .nombreClient{
+    margin-top: 20px;
+    font-weight: bold; /**/
+}
+.containerImageGallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.containerImageGallery .gridItemGallery img{
+    width: 100%;
+    height: 100%;
+}
+.containerFooter{
+    background-color: #4abba4;
+    text-align: center;
+    padding: 20px 5px;
+}
+.containerFooter .footerContact{
+    margin-top: 20px;
+}
+.containerFooter .footerContact a{
+    text-decoration: none;
+    color: #2c6b5e;
+    padding: 8px;
+}
+.containerFooter .footerIcons{
+    margin-top: 40px;
+}
+.containerFooter .footerIcons a{
+    text-decoration: none;
+}
+.containerFooter .footerIcons a svg{
+    margin: 4px;
+}
+.containerFooter .footerContact a:hover{
+    color: #1f4e44;
+}
+.containerFooter .footerIcons a:hover path{
+    fill: #1f4e44;
+}
+@media(min-width:1130px){
+    .browser .divText a img{
+        margin-top: 150px !important;
+    }
+}
+@media(min-width:912px){
+    .gridDiv .gridItemTextImg .ItemText{
+        padding: 0 80px 30px 80px;
+        width: 50%;
+        height: 30%;
+    }
+    .gridDiv{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .gridDiv .gridItem1{
+        grid-column: 2/3;
+    }
+    .gridDiv .gridItem2{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .browser{
+        padding: 40px;
+    }
+    .browser .divButton{
+        display: none;
+    }
+    .browser .divNavlink{
+        display: block;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .browser .divText{
+        padding-top: 70px;
+    }
+    .browser .divText h1{
+        letter-spacing: 12px;
+        font-size:45px;
+    }
+    .gridDiv .gridItemText{
+        text-align: left;
+        padding: 130px;
+    }
+    .browser .divText a img{
+        margin-top: 60px;
+    }
+    .gridDiv .gridItem h2{
+        font-size: 45px;
+    }
+    .gridDiv .gridItem p{
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .gridDiv .gridItem a{
+        margin-top: 30px;
+    }
+    .containerTestimoni{
+        padding: 70px;
+    }
+    .containerTestimoni .divClientTestimoni{
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 50px;
+    }
+    .containerImageGallery{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .containerFooter{
+        background-color: #4abba4;
+        text-align: center;
+        padding: 40px;
+    }
+    .containerFooter .footerContact{
+        margin-top: 40px;
+    }
+    .containerFooter .footerContact a{
+        padding: 20px;
+    }
+    .containerFooter .footerIcons{
+        margin-top: 70px;
+    }
+    .containerFooter .footerIcons a svg{
+        margin: 8px;
+    }
+}
+@media(min-width:500px){
+    .header .imgDesktop{
+        display: block;
+    }
+    .header .imgMobile{
+        display: none;
+    }
+}
